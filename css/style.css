@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 60vh;
+  background-image: url(../img/header-bg.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-color: rgba(47, 47, 0, .6);
+  background-blend-mode: overlay;
+}
+
+nav {
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header img.header-logo {
+  color: #fff;
+  width: 35%;
+}
+
+header .centered-content {
+
+}
+
+/* MODELS */
+.models {
+  padding: 2rem 6rem;
+}
+
+.models .card-bottom > img {
+  max-width: 100%;
+}
+
+.models .card {
+  text-align: center;
+}
+
+.models .card:first-of-type {
+  padding-right: 20px;
+}
+
+.models .card:last-of-type {
+  padding-left: 20px;
+}
+
+.models .card > .card-top {
+  background-color: #fafafa;
+}
+
+/* HOW-WORK */
+.how-work {
+  background-image: url(../img/oldman-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 130px;
+  margin: 50px 0;
+}
+
+#phone-frame {
+  width: 100%;
+}
+.how-work .text-left, .how-work .text-right {
+  padding-top: 25%;
+}
+
+/* MORE ACTIONS */
+.more-actions .app, .more-actions .find-us {
+  height: 400px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.more-actions .mobility {
+  height: 500px;
+  background-image: url(https://hd2.tudocdn.net/887787?w=1200&h=900);
+  background-color: rgba(47, 47, 0, .6);
+  background-blend-mode: overlay;
+  margin-bottom: 30px;
+}
+
+.more-actions .app {
+  background-color: #fafafa;
+  background-image: url(../img/app.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 200px;
+}
+
+.more-actions .find-us {
+  background-image: url(../img/find-us.jpg);
+  background-size: cover;
+}
+
+/* FOOTER */
+.head-foot-container {
+  width: 900px;
+  margin: 0 auto;
+}
