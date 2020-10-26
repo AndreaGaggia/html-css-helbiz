@@ -4,17 +4,28 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
-header {
-  height: 60vh;
-  background-image: url(../img/header-bg.webp);
-  background-size: cover;
-  background-position: bottom;
-  background-color: rgba(47, 47, 0, .6);
-  background-blend-mode: overlay;
+li {
+  list-style: none;
 }
 
+img.badge {
+  width: 130px;
+}
+
+.t-centered {
+  text-align: center;
+}
+.t-right {
+  text-align: right;
+}
+
+
+/* HEADER */
+
+/* nav */
 nav {
   height: 60px;
   line-height: 60px;
@@ -22,18 +33,42 @@ nav {
 }
 
 nav ul li {
-  list-style: none;
   display: inline-block;
 }
 
-header img.header-logo {
+nav img.header-logo {
   color: #fff;
   width: 35%;
 }
-
-header .centered-content {
-
+/* banner */
+.banner {
+  height: 60vh;
+  background-image: url(../img/header-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: rgba(47, 47, 0, .8);
+  background-blend-mode: overlay;
+  color: #fff;
+  position: relative;
 }
+
+.banner .centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner .centered-content > h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.banner .centered-content > p {
+  margin: 1.5rem 0;
+}
+
 
 /* MODELS */
 .models {
@@ -58,6 +93,16 @@ header .centered-content {
 
 .models .card > .card-top {
   background-color: #fafafa;
+  padding-top: 3rem;
+}
+.card-top > h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.card-top > h3 {
+  font-size: 26px;
+  font-weight: lighter;
+  margin: 20px 0;
 }
 
 /* HOW-WORK */
@@ -73,7 +118,9 @@ header .centered-content {
   width: 100%;
 }
 .how-work .text-left, .how-work .text-right {
-  padding-top: 25%;
+  padding-top: 24%;
+}
+.how-work .text-left {
 }
 
 /* MORE ACTIONS */
@@ -105,7 +152,12 @@ header .centered-content {
 }
 
 /* FOOTER */
+footer {
+  color: #fff;
+  background-color: #000;
+}
+
 .head-foot-container {
-  width: 900px;
+  width: 990px;
   margin: 0 auto;
 }
