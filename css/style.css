@@ -15,13 +15,34 @@ img.badge {
   width: 130px;
 }
 
+/* utility classes */
 .t-centered {
   text-align: center;
 }
 .t-right {
   text-align: right;
 }
-
+.mr_30 {
+  margin-right: 30px;
+}
+.mr_10 {
+  margin-right: 10px;
+}
+.pr-1rem {
+  padding-right: 1rem;
+}
+.pl-1rem {
+  padding-left: 1rem;
+}
+.my_2rem {
+  margin: 2rem 0;
+}
+.my_15 {
+  margin: 15px 0;
+}
+.fw_normal {
+  font-weight: normal;
+}
 
 /* HEADER */
 
@@ -36,10 +57,18 @@ nav ul li {
   display: inline-block;
 }
 
+nav ul li a {
+  color: grey;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
 nav img.header-logo {
   color: #fff;
   width: 35%;
 }
+
 /* banner */
 .banner {
   height: 60vh;
@@ -121,13 +150,31 @@ nav img.header-logo {
   padding-top: 24%;
 }
 .how-work .text-left {
+  padding-right: 2rem;
+  padding-left: 5rem;
+}
+.how-work .text-right {
+  padding-left: 5rem;
+}
+.how-work .text-left > h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.how-work .text-right > h4, .how-work .text-right > h5 {
+  font-weight: lighter;
 }
 
+
 /* MORE ACTIONS */
-.more-actions .app, .more-actions .find-us {
+.more-actions .card-content {
   height: 400px;
   text-align: center;
   padding-top: 30px;
+  color: #fff;
+}
+
+.more-actions a {
+  color: #fff;
 }
 
 .more-actions .mobility {
@@ -136,17 +183,35 @@ nav img.header-logo {
   background-color: rgba(47, 47, 0, .6);
   background-blend-mode: overlay;
   margin-bottom: 30px;
+  position: relative;
 }
 
-.more-actions .app {
-  background-color: #fafafa;
+.text-aligned-right {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-aligned-right h2 {
+  font-size: 42px;
+  font-weight: normal;
+}
+.text-aligned-right h3 {
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.more-actions .app > .card-content {
+  background-color: #31404E;
   background-image: url(../img/app.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 200px;
 }
 
-.more-actions .find-us {
+.more-actions .find-us > .card-content {
   background-image: url(../img/find-us.jpg);
   background-size: cover;
 }
@@ -155,9 +220,44 @@ nav img.header-logo {
 footer {
   color: #fff;
   background-color: #000;
+  padding: 4rem 0;
+}
+
+footer .top-row li:not(:last-child) {
+  margin-bottom: .8rem;
+}
+
+footer .top-row a {
+  color: grey;
+  font-size: 80%;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 90%;
+  margin-bottom: 1.4rem;
+}
+
+footer hr {
+  border: .5px inset grey;
 }
 
 .head-foot-container {
   width: 990px;
   margin: 0 auto;
+}
+
+.badge-row a {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+footer .terms-row i {
+  font-size: 130%;
+  margin-right: 10px;
+}
+
+footer .terms-row span {
+  font-size: 12px;
 }
